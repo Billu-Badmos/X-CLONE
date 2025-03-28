@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: black;
+    color: white;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .leftSidebar {
+    width: 14.25%; 
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3px;
+    padding-left: 89px; 
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-right: 1px solid #2F3336;
+    overflow-y: auto;
+  }
+  
+  
+  .leftSidebar img {
+    width: 27px;
+    height: 27px;
+    margin: 12px 0;
+
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .leftSidebar img:first-child {
+    width: 29px;
+    height: 29px;
+  }
+
+  .leftSidebar img:nth-child(10){
+    margin-top:7px ;
+    width: 55px;
+    height: 55px;
+  }
+
+  .leftSidebar img:last-child{
+    margin-top: 25px;
+    width: 54px;
+    height: 54px;
+  }
+  .leftSidebar img:hover {
+    transform: scale(1.1);
+  }
+
+  .rightSidebar {
+    width: 30%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3px;
+    position: fixed;
+    left: 61%;
+    top: 0;
+    border-left: 1px solid #2F3336;
+    overflow-y: auto;
+  }
+
+  .search {
+    margin-left: 25px;
+    margin-top: 2px;
+    width: max-content;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: 28px;
+    background: rgb(0, 0, 0);
+    width: 351px;
+    border:1px solid #2F3336;
+
+  }
+  .search :first-child {
+    width: 16.5px;
+    height: 16.5px;
+  }
+  .searchBar {
+   font-size: 14px;
+   font-family:Helvetica ;
+   color: #2F3336;
+   margin-left: 4px;
+   outline: none;
+   border:none;
+   background: transparent;
+   flex: 1;
+  }
+
+  .premium {
+    width: 351px;
+    height: 146px;
+    padding: 16px;
+    margin-left: 25px;
+    margin-top: 19px;
+    border-radius: 16px;
+    border: 1px solid #2F3336;
+    background-color: #000;
+  }
+
+  .subHead {
+
+    font-size: 21px;
+    font-family: Helvetica;
+    color: #ffffff;
+    margin-top: -5px;
+  }
+  .subBody {
+    font-size: 15.5px;
+    font-family: Helvetica;
+    color: #E7E9EA;
+    margin-top: 14px;
+  }
+
+  .subButton {
+    font-size: 15px;
+    font-family: Helvetica;
+    margin-top: 12px;
+    width: 105px;
+    height: 35px;
+    background-color: #00a1ec;
+    color: #ffffff;
+    border: none;
+    border-radius: 21px;
+  }
+  .subButton:hover{
+    background: #0082be;
+  }
+  .happening {
+    width: 351px;
+    height: max-content;
+    padding: 16px;
+    margin-left: 25px;
+    margin-top: 17px;
+    border-radius: 16px;
+    border: 1px solid #2F3336;
+    background-color: #000;
+  }
+
+  .mainHappening{
+    font-family:Arial; 
+    font-size: 20.5px;
+    margin-top: -5px;
+    margin-left: 2px;
+  }
+
+  .khloeImg {
+    margin-top: 22px;
+    width: 79px;
+    height: 79px;
+  }
+
+  .info {
+    margin-left: 91px;
+    margin-top: -80px;
+    font-family: Arial;
+    font-size: 15px;
+  }
+
+  .live {
+    margin-top: 1px;
+    margin-left: 91px;
+    font-family: Segoe UI;
+    font-size: 13.5px;
+    font-weight: 475;
+    color: #858585;
+  }
+
+  .hashtagInfo1 {
+    margin-top: 65px;
+    font-family: Segoe UI;
+    font-size: 13.5px;
+    font-weight: 475;
+    color: #858585;
+  }
+
+  .hashtags1 {
+    margin-top: 3px;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 650;
+  }
+
+  .postCount1 {
+    margin-top: 2px;
+    font-family: Segoe UI;
+    font-size: 13.5px;
+    font-weight: 475;
+    color: #858585;
+  }
+  
+
+  .hashtagInfo2 {
+    margin-top: 22px;
+    font-family: Segoe UI;
+    font-size: 13.5px;
+    font-weight: 475;
+    color: #858585;
+  }
+
+  .hashtags2 {
+    margin-top: 3px;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 650;
+  }
+
+  .postCount2 {
+    margin-top: 2px;
+    font-family: Segoe UI;
+    font-size: 13.5px;
+    font-weight: 475;
+    color: #858585;
+  }
+
+  .hashtagInfo3 {
+    margin-top: 22px;
+    font-family: Segoe UI;
+    font-size: 13.5px;
+    font-weight: 475;
+    color: #858585;
+  }
+
+  .hashtags3 {
+    margin-top: 3px;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 650;
+  }
+
+  .postCount3 {
+    margin-top: 2px;
+    font-family: Segoe UI;
+    font-size: 13.5px;
+    font-weight: 475;
+    color: #858585;
+  }
+
+  .header {
+    display: flex;
+    
+    position: fixed;
+    gap: 0;
+    margin-left:67px;
+    border: none;
+    border-bottom:1px solid #2F3336;
+  }
+
+  .foryou {
+    font-family: Arial;
+    font-weight: 650;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+    width:295px; 
+    height:53px;
+    border: none;
+    margin-left: 2px;
+  }
+  .foryou:hover{
+    background:#181818;
+  }
+  .following{
+    font-family: Arial;
+    font-weight: 650;
+    font-size: 15px;
+    color: #6e6e6e;
+    background-color: rgb(0, 0, 0);
+    width:305px; 
+    height:53px;
+    border: none;
+  }
+  .following:hover{
+    background:#181818;
+  }
+  .bluetube {
+    position: absolute;
+    width: 57px;
+    height: 6px;
+    bottom: 0;
+    left: 120px;
+  }
+
+  .main {
+    display: flex;
+    
+  }
+  .tweetkaro {
+  display: flex;
+  margin-left: 100px;
+  margin-top: 54px;
+  
+}
+
+.tweet {
+  width: 534px;
+  height: 70px;
+  background: #000;
+  border: 1px solid black;
+  font-size: 20px;
+  color: #ffffff;
+}
+.tweet:focus{
+  outline:none;
+}
+
+.tweetprofile {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-left: -22px;
+  margin-top: 9px;
+}
+
+.tweeticons {
+  width: 640px;
+  margin-top: 68px;
+  margin-left:-638px;
+  border-bottom: 1px solid #2F3336;
+
+}
+
+
+
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.postone {
+  margin-top: -1px;
+  width: 600px;
+  margin-left:180px;
+}
+.posttwo {
+
+}
+
